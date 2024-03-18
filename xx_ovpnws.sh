@@ -1,10 +1,10 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 #Database Details
-HOST='66.45.232.107';
-USER='alfaisal_alfaisal';
-PASS='faisal@123';
-DBNAME='alfaisal_cp';
+HOST='66.45.227.43';
+USER='mhrtdutj_tst';
+PASS='azerty123';
+DBNAME='mhrtdutj_tst';
 
 install_require()
 {
